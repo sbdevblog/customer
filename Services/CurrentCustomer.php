@@ -1,4 +1,8 @@
 <?php
+/**
+ * @copyright Copyright (c) sbdevblog https://www.sbdevblog.com)
+ */
+
 namespace SbDevBlog\Customer\Services;
 
 use Magento\Customer\Model\Session;
@@ -27,7 +31,7 @@ class CurrentCustomer
      * @return int
      */
     public function getCurrentCustomerId() {
-        $this->customerSession->getCustomerId(),
+        $this->customerSession->getCustomerId();
     }
 
     /**
@@ -37,6 +41,6 @@ class CurrentCustomer
      */
     public function isLoggedInCustomer()
     {
-      return $this->customerSession->isLoggedIn()
+      return $this->customerSession->isLoggedIn();
     }
 }
